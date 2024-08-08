@@ -1,7 +1,7 @@
 # Copyright 2021 Manna Harbour
 # https://github.com/manna-harbour/miryoku
 
-name: 'Main'
+name: "Main"
 on:
   workflow_call:
     inputs:
@@ -13,13 +13,13 @@ on:
         default: '["default"]'
       alphas:
         type: string
-        default: '["default"]'
+        default: '["qwerty"]'
       extra:
         type: string
         default: '["default"]'
       tap:
         type: string
-        default: '["default"]'  
+        default: '["default"]'
       nav:
         type: string
         default: '["default"]'
@@ -44,7 +44,6 @@ on:
       modules:
         type: string
         default: '["default"]'
-  
 
 jobs:
   main:
@@ -73,12 +72,12 @@ jobs:
       - name: checkout
         uses: actions/checkout@v4
         with:
-          path: 'miryoku_zmk'
+          path: "miryoku_zmk"
       - name: main
         id: main
         run: |
           test "$MIRYOKU_DEBUG" = 'MIRYOKU_DEBUG_TRUE' && set -x
-          
+
           echo "::group::variables"
 
           if [ -n "${{ matrix.shield }}" -a "${{ matrix.shield }}" != "default" ]
@@ -135,7 +134,7 @@ jobs:
           mkdir "$artifact_dir"
 
           test "$MIRYOKU_DEBUG" = 'MIRYOKU_DEBUG_TRUE' && cp "$configfile" "$artifact_dir"
-          
+
           if [ -n "${{ matrix.kconfig }}" -a "${{ matrix.kconfig }}" != 'default' ]
           then
             kconfig_file="${GITHUB_WORKSPACE}/miryoku_zmk/config/$keyboard_split.conf"
@@ -372,4 +371,3 @@ jobs:
         with:
           name: ${{ steps.main.outputs.run_name }}
           path: ${{ steps.main.outputs.artifact_dir }}
-
