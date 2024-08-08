@@ -22,7 +22,7 @@ on:
         default: '["default"]'
       nav:
         type: string
-        default: '["default"]'
+        default: '["vi"]'
       clipboard:
         type: string
         default: '["default"]'
