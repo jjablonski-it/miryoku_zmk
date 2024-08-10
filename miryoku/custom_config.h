@@ -11,7 +11,7 @@
 // ├─────────┼─────────┼─────────┼─────────┼─────────┤   ├─────────┼─────────┼─────────┼─────────┼─────────┤
 // │         │         │ESC/MEDIA│SPC/SYM  │TAB/MOUSE│   │RET/NAV  │BSPC/NUM │DEL/FUN  │         │         │
 // └─────────┴─────────┴─────────┴─────────┴─────────┘   └─────────┴─────────┴─────────┴─────────┴─────────┘
-#define MIRYOKU_BASE_QWERTY \
+#define MIRYOKU_LAYER_BASE \
 &kp Q,             &kp W,             &kp E,             &kp R,             &kp T,             &kp Y,             &kp U,             &kp I,             &kp O,             &kp P,             \
 U_MT(LGUI, A),     U_MT(LALT, S),     U_MT(LCTRL, D),    U_MT(LSHFT, F),    &kp G,             &kp H,             U_MT(LSHFT, J),    U_MT(LCTRL, K),    U_MT(LALT, L),     U_MT(LGUI, SQT),   \
 U_LT(U_BUTTON, Z), U_MT(RALT, X),     &kp C,             &kp V,             &kp B,             &kp N,             &kp M,             &kp COMMA,         U_MT(RALT, DOT),   U_LT(U_BUTTON, SLASH),\
@@ -27,7 +27,7 @@ U_NP,              U_NP,              U_LT(U_MEDIA, ESC),U_LT(U_SYM, SPACE),U_LT
 // ├─────────┼─────────┼─────────┼─────────┼─────────┤   ├─────────┼─────────┼─────────┼─────────┼─────────┤
 // │         │         │         │         │         │   │    .    │    0    │    -    │         │         │
 // └─────────┴─────────┴─────────┴─────────┴─────────┘   └─────────┴─────────┴─────────┴─────────┴─────────┘
-#define MIRYOKU_NUM \
+#define MIRYOKU_LAYER_NUM \
 &kp N1,            &kp N2,            &kp N3,            &kp N4,            &kp N5,            &kp N6,            &kp N7,            &kp N8,            &kp N9,            &kp N0,            \
 &kp LGUI,          &kp LALT,          &kp LCTRL,         &kp LSHFT,         U_NA,              U_NA,              &kp LSHFT,         &kp LCTRL,         &kp LALT,          &kp LGUI,          \
 U_NA,              &kp RALT,          &u_to_U_NUM,       &u_to_U_NAV,       U_NA,              U_NA,              U_NA,              U_NA,              &kp RALT,          U_NA,              \
@@ -43,7 +43,7 @@ U_NP,              U_NP,              U_NA,              U_NA,              U_NA
 // ├─────────┼─────────┼─────────┼─────────┼─────────┤   ├─────────┼─────────┼─────────┼─────────┼─────────┤
 // │         │         │         │         │         │   │    :    │    ;    │    `    │         │         │
 // └─────────┴─────────┴─────────┴─────────┴─────────┘   └─────────┴─────────┴─────────┴─────────┴─────────┘
-#define MIRYOKU_SYM \
+#define MIRYOKU_LAYER_SYM \
 &kp EXCL,          &kp AT,            &kp HASH,          &kp DLLR,          &kp PRCNT,         &kp CARET,         &kp AMPS,          &kp ASTRK,         &kp LPAR,          &kp RPAR,          \
 &kp LGUI,          &kp LALT,          &kp LCTRL,         &kp LSHFT,         U_NA,              &kp MINUS,         &kp EQUAL,         &kp LBKT,          &kp RBKT,          &kp BSLH,          \
 U_NA,              &kp RALT,          &u_to_U_SYM,       &u_to_U_MOUSE,     U_NA,              &kp UNDER,         &kp PLUS,          &kp LBRC,          &kp RBRC,          &kp PIPE,          \
@@ -59,7 +59,7 @@ U_NP,              U_NP,              U_NA,              U_NA,              U_NA
 // ├─────────┼─────────┼─────────┼─────────┼─────────┤   ├─────────┼─────────┼─────────┼─────────┼─────────┤
 // │         │         │         │         │         │   │   F11   │   F12   │  PAUSE  │         │         │
 // └─────────┴─────────┴─────────┴─────────┴─────────┘   └─────────┴─────────┴─────────┴─────────┴─────────┘
-#define MIRYOKU_FUN \
+#define MIRYOKU_LAYER_FUN \
 &kp F1,            &kp F2,            &kp F3,            &kp F4,            &kp F5,            &kp F6,            &kp F7,            &kp F8,            &kp F9,            &kp F10,           \
 &kp LGUI,          &kp LALT,          &kp LCTRL,         &kp LSHFT,         U_NA,              U_NA,              &kp LSHFT,         &kp LCTRL,         &kp LALT,          &kp LGUI,          \
 U_NA,              &kp RALT,          &u_to_U_FUN,       &u_to_U_MEDIA,     U_NA,              U_NA,              U_NA,              U_NA,              &kp RALT,          U_NA,              \
